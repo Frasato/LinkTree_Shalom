@@ -1,0 +1,53 @@
+:root{
+    --cor-amarela: #ffc000;
+    --cor-cinza_escuro: #151719;
+    --cor-branco: #ffffff;
+}/*Variáveis*/
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}/*Reset CSS*/
+
+/*
+Mobile version
+Início do código CSS
+*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    background-image: url("../../content/bg.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}/*Estilização do container todo*/
+
+.container > img{
+    width: 120px;
+}/*Imagem do topo*/
+
+.container > .container_btn{
+    background-color: var(--cor-branco);
+    color: var(--cor-cinza_escuro);
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    margin: 25px 0 5px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}/*Estilização dos botões*/
+
+.container_btn > i{
+    margin: 0 20px 0 0;
+    font-size: 2em;
+}/*Estilização do icone*/
