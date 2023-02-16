@@ -45,9 +45,15 @@ Início do código CSS
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s ease-in-out;
 }/*Estilização dos botões*/
 
 .container_btn > i{
     margin: 0 20px 0 0;
     font-size: 2em;
 }/*Estilização do icone*/
+
+.container_btn:hover{
+    color: var(--cor-amarela);
+    filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.3));
+}
